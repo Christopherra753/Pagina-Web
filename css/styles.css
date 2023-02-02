@@ -30,7 +30,7 @@ body{
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 15px 10px;
+  padding: 35px 30px;
   background-color: #0c0636;
 }
   .nav__logo{
@@ -75,6 +75,9 @@ body{
   background-color: #000;
   color: #fff;
   padding: 15px 30px;
+  transition-property: padding,letter-spacing;
+  transition-duration: .3s;
+  transition-timing-function: ease;
 }
 .hero__imgs{
   display: flex;
@@ -83,4 +86,17 @@ body{
 }
 .hero__img{
   width: 70%;
+}
+
+.hero__cta:hover{
+  padding-inline: 40px;
+  letter-spacing: 3px;
+}
+
+
+@media (min-width:850px){
+  .hero__main{
+    flex-direction: row;
+    padding: 15px 40px;
+  }
 }
