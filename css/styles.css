@@ -1,0 +1,86 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+img{
+  width: 100%;
+}
+a{
+  text-decoration: none;
+  color: #000;
+  display: inline-block;
+}
+ul{
+  list-style: none;
+}
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  color: #fff;
+}
+
+.hero{
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+}
+
+.hero__nav{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px 10px;
+  background-color: #0c0636;
+}
+  .nav__logo{
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .nav__list{
+    display: none;
+    gap: 5px;
+  }
+.hero__menu{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__icon{
+  font-size: 30px;
+}
+.hero__main{
+  padding: 15px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px; 
+  background: rgb(12,6,54);
+  background: linear-gradient(90180deg, rgba(12,6,54,1) 0%, rgba(9,81,105,1) 35%);
+}
+.hero__texts{
+  text-align: center;
+}
+.hero__title{
+  font-size: 2.8rem;
+  letter-spacing: 5px;
+}
+.hero__paragraph{
+  margin: 20px 0;
+  line-height: 1.5;
+  text-align: justify;
+  font-size: 1.1rem;
+}
+.hero__cta{
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+}
+.hero__imgs{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero__img{
+  width: 70%;
+}
